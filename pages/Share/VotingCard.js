@@ -11,7 +11,7 @@ const VotingCard = ({ topRateData, imageBaseUrl }) => {
               <div className="flex flex-column px-3 border-1px-solid-red border-primary border-round-2xl card-details-container py-3 px-3 cursor-pointer mt-0 justify-content-around ratingRes ">
                 <div>
                   <Image
-                    src={`${imageBaseUrl}${item.backdrop_path}`}
+                    src={`${imageBaseUrl}${item?.backdrop_path}`}
                     alt=""
                     height={110}
                     width={110}

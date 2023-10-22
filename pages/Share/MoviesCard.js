@@ -16,7 +16,7 @@ const MoviesCard = ({ popularData, title, imageBaseUrl, onShowMore }) => {
               <Link href={`/details/${item.id}`}>
                 <div className="rightNavListItems cursor-pointer justify-content-between aling-item-center" key={index}>
                   <Image
-                    src={`${imageBaseUrl}${item.backdrop_path}`}
+                    src={`${imageBaseUrl}${item?.backdrop_path}`}
                     alt=""
                     width={40}
                     height={40}
