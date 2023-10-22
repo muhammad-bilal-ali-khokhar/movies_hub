@@ -1,0 +1,33 @@
+{
+  "name": "movie-app-next12",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.5.1",
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.4.19",
+    "formik": "^2.4.4",
+    "next": "13.4.19",
+    "primeicons": "^6.0.1",
+    "primereact": "^9.6.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.1.2",
+    "react-router-dom": "^6.16.0",
+    "react-use-event-listener": "^1.1.1",
+    "redux": "^4.2.1",
+    "swiper": "^10.2.0",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.4.19"
+  }
+}
