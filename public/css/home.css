@@ -20731,9 +20731,6 @@ a{
 }
 
 @media only screen and (max-width: 600px) {
-  /* .cateLayout{
-    display: none;
-  } */
   .mainResponse{
     display: flex !important;
     flex-direction: column !important;
@@ -20804,13 +20801,23 @@ a{
     height: 185px;
   }
   .header{
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
   }
   .mobNav{
     display: block;
   }
   .header a {
-    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+  }
+  .spin-span svg{
+    width: 30px;
+    height: 30px;
+  }
+  input.p-autocomplete-input.p-component.p-inputtext {
+    width: 60px;
   }
 }

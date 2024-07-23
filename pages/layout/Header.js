@@ -1,17 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Logo from "../../public/svgs/index";
 import { AutoComplete } from "primereact/autocomplete";
 import Link from "next/link";
-import { Button } from "primereact/button";
-import { Sidebar } from 'primereact/sidebar';
 
 
 // This along with sidebars is a layout component and should be moved to intended directory
 const HeaderComponent = ({ movies, onMovieSearch }) => {
   const [seaching, setSeaching] = useState("");
-  const [sidBar, setSidBar] = useState(false);
   const [items, setItems] = useState();
-  const [sidebar, setSidebar] = useState(false);
 
   const search = () => {
     setItems(
@@ -23,20 +19,13 @@ const HeaderComponent = ({ movies, onMovieSearch }) => {
 
   return (
     <>
-      <div className="card">
-        <Button
-          icon="pi pi-arrow-right"
-          onClick={() => setSidBar(!sidBar)}
-          className="mr-2"
-        />
-      </div>
-
-      <div className="header" style={{visibility:sidBar? "none" : 'unset'}}>
+      <div className="header" style={{visibility:'unset'}}>
         <span className="spin-span">
           <Logo />
         </span>
 
-        <Link href={`/home`}>
+          <>
+          <Link href={`/home`}>
           Home
         </Link>
         <Link href={`/toprated`}>
@@ -45,7 +34,9 @@ const HeaderComponent = ({ movies, onMovieSearch }) => {
         <Link href={`/upcoming`}>
           Upcoming
         </Link>
-        <span className="p-input-icon-left">
+        </>
+        
+        <span className="p-input-icon-left" style={{width:search ? '200' : 'auto'}}>
           <i className="pi pi-search" />
           <AutoComplete
             value={seaching}
