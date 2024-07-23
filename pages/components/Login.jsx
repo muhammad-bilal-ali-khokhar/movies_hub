@@ -43,8 +43,8 @@ const FormikForm = () => {
   return (
     <div className="flex flex-column justify-content-center align-items-center p-d-flex p-flex-column p-jc-center p-ai-center h-screen formBgImage">
       <div className="overlay"></div>
-      <div className="formBg justify-content-center p-jc-center p-ai-center w-3 flex flex-column border-round-2xl px-5 py-5 absolute">
-        <h1 style={{ color: "#e50914" }}>Sign Up</h1>
+      <div className="formBg justify-content-center p-jc-center p-ai-center w-10 flex flex-column border-round-2xl px-5 py-5 absolute">
+        <h1 style={{ color: "#11c4e0" }}>Sign Up</h1>
         <form className={""} onSubmit={handleSubmit}>
           <label className="text-yellow-50 font-bold">Name</label>
           <br />
@@ -114,7 +114,7 @@ const FormikForm = () => {
             <Button
               label="Submit"
               type="submit"
-              style={{ background: "#e50914", border: "1px solid #e50914" }}
+              style={{ background: "#11c4e0" }}
             />
           </div>
         </form>
